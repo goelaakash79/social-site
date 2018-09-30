@@ -2,10 +2,9 @@
 from __future__ import unicode_literals
 from .models import User, Comment, Post
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 import json
 
-# Create your views here.
 def login(request):
     msg = ''
     if request.method == 'POST':
